@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Required meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- Color theme for statusbar -->
+    <meta name="theme-color" content="#2196f3">
+    <!-- Your app title -->
+    <title>Welcomescreen demo | Framework7</title>
+   <link rel="stylesheet" href="css/framework7.min.css">
+  <link rel="stylesheet" href="css/fontawesome-all.min.css">
+  <link rel="stylesheet" href="css/app.css">
+  <link rel="apple-touch-icon" href="img/f7-icon-square.png">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/framework7.welcomescreen.css">
+  </head>
+
+  <body>
+    <!-- App root element -->
+    <div id="app" class="color-theme-red">
+	
+	<!-- Statusbar overlay -->
+      <div class="statusbar"></div>
+	
+	<!-- Left panel with cover effect-->
+    <div class="panel panel-left panel-cover">
+      <div class="view">
+			 <div class="page">
+				<div class="navbar side-nav-left">
+					<div class="navbar-inner ">
+					  <!--<div class="title">Right Panel</div>-->
+					  
+						<div class="block">
+						  <div class="row no-gap">
+							<div class="col-40"> <div  class="ratio img-responsive img-circle" style="background-image: url(https://png.pngtree.com/element_origin_min_pic/17/09/18/86f146e932d55ea3ffc59cf7a976398e.jpg);"></div></div>
+							<div class="col-60">
+								<div class="block">
+									<div class="row no-gap title-user">
+										<div class="col-100">Your Real Name</div>
+										<div class="col-100">@your_real_name</div>
+									</div>
+								</div>	
+							</div>
+							<div class="col-100" id="myEmail">realname@gmail.com</div>
+						  </div>
+						</div>  
+						
+					</div>	
+				</div>
+				<div class="page-content">
+				  
+				  
+				  <div class="block side-content amount-value"><i class="fas fa-money-bill-alt icon-left"></i><span id="amountLeft">Rp 2.000.000</span></div>
+				  <div class="list links-list">
+					<ul>
+					  
+					  <li>
+						<a href="#view-settings" class="panel-close tab-link"><i class="fa fa-user icon-left"></i> Profile</a>
+					  </li>
+					  <li>
+						<a href="/scan/" class="panel-close"><i class="fas fa-qrcode icon-left"></i>Bayar Via QR</a>
+					  </li>
+					  <li id="coinAgen">
+						<a href="/badge/" class="panel-close"><i class="fas fa-hockey-puck icon-left" ></i>Terima Koin</a>
+					  </li>
+					  <li>
+						<a href="/badge/" class="panel-close"><i class="fas fa-lightbulb icon-left"></i> PPOB & Pembayaran</a>
+					  </li>
+					  <li>
+						<a href="/history/" class="panel-close"><i class="fas fa-history icon-left"></i></i> Riwayat</a>
+					  </li> 
+					  <li>
+						<a href="#" class="panel-close button-logout"><i class="fas fa-sign-out-alt icon-left"></i></i> Logout</a>
+					  </li>
+					  
+					</ul>
+				  </div>
+				 
+				</div>
+			  </div>
+       </div>
+    </div>
+      
+
+      <!-- Your main view, should have "view-main" class -->
+      <div class="view view-main">
+        <!-- Initial Page, "data-name" contains page name -->
+        <div data-name="home" class="page">
+
+          <!-- Top Navbar -->
+          <div class="navbar">
+			  <div class="navbar-inner">
+				  <div class="left">
+					<a href="#" class="link icon-only panel-open" data-panel="left">
+					  <i class="icon f7-icons ios-only">menu</i>
+					  <i class="icon material-icons md-only">menu</i>
+					</a>
+				  </div>
+				  <div class="title sliding">CelenganID</div>
+				  <div class="right">
+
+				  </div>
+            </div>
+          </div>
+
+          <!-- Scrollable page content -->
+          <div class="page-content">
+			<div class="swiper-container demo-swiper">
+				<!-- Slides wrapper -->
+				<div class="swiper-wrapper">
+					<!-- Slides -->
+				
+					<div class="swiper-slide"><img class="img-responsive" src="http://babies.lk/image/uploads/374/cache/catalog/Babies.lk%20Banner%204-1366x600.jpg"></div>
+					<div class="swiper-slide"><img class="img-responsive" src="http://tesbakatindonesia.com/wp-content/uploads/2016/06/banner-voucher-kidipal-rev-tbi-A.png"></div>
+					<div class="swiper-slide"><img class="img-responsive" src="http://tesbakatindonesia.com/wp-content/uploads/2017/06/Banner-Promo-Backtoschool-2017.jpg"></div>
+				
+				</div>
+				<!-- Pagination, if required -->
+				<div class="swiper-pagination"></div>
+			</div>
+			
+			 <div class="list searchbar-hide-on-search block-clear">
+            <ul>
+			 <li>
+                
+                 
+                  <div class="item-inner block-items">
+						<div class="item-title amount-value">
+							<div class="block block-align center">
+								<div class="row no-gap">
+									<div class="col-100">Saldo Celengan</i></div>
+									<div class="col-50 amount-title" id="amount">Rp 2.000.000</div>
+									<div class="col-50 amount-title"><button class="col button button-outline button-raised button-add button-text button-fill"><span>Tambah <br/> Dana</span></button></div>
+								</div>
+							</div>
+						</div>
+                  </div>
+               
+              </li>
+			  <li>
+			  </li>
+              <li>
+			   <!--<div class="block-title searchbar-found">Mitra Celengan Di Sekitar Anda</div>
+                 <div class="block">
+					<div class="row no-gap">
+						<div class="col-50"><img class="img-responsive" src="https://img.indoclubbing.com/places/603213616844183139763450610640/bakmi-gm-mall-of-indonesia_260.png"></div>
+						<div class="col-50"><img class="img-responsive" src="https://img.indoclubbing.com/places/202800333912063236952869184564/es-teler-77-galeria-mall_260.png"></div>
+						<div class="col-50"><img class="img-responsive" src="https://img.indoclubbing.com/places/129482043221530159474026413042/happy-puppy-suka-suka-samarinda-sebrang_260.png"></div>
+						<div class="col-50"><img class="img-responsive" src="https://dev.bambideal.id/uploads/merchant/1504171929-5e7f04b92e45912bc1268f2c84eb7738-20170831043209.png"></div>
+					</div>
+				 </div>-->
+              </li> 
+			  <li>
+				 <div class="toolbar tabbar">
+					<div class="toolbar-inner">
+					  <a href="#tab-1" class="tab-link tab-link-active">Pembelian</a>
+					  <a href="#tab-2" class="tab-link">Pembayaran</a>
+					  <a href="#tab-3" class="tab-link">Lainnya</a>
+					</div>
+				  </div>
+				  <div class="tabs-animated-wrap">
+					<div class="tabs">
+					  <div id="tab-1" class="page-content tab tab-active tab-content">
+						<div class="block block-items">
+							<ul class="service-list">
+							<li class="item-content item-input">
+							
+							  <div class="item-inner">
+								<div class="item-title item-label">Pilih Layanan</div>
+								<div class="item-input-wrap">
+								  <select placeholder="Please choose...">
+									<option value="PLN">PLN Pra Bayar</option>
+									<option value="Pulsa">Pulsa</option>
+									<option value="Data">Paket Data</option>
+									<option value="Kereta">Tiket Kereta</option>
+									<option value="Pesawat">Tiket Pesawat</option>
+									<option value="Voucher">Voucher Game</option>
+								  </select>
+								</div>
+							  </div>
+							</li>
+							<li class="item-content item-input">
+							 
+							  <div class="item-inner">
+								<div class="item-title item-label">Phone</div>
+								<div class="item-input-wrap">
+								  <input type="tel" placeholder="Nomor Handphone">
+								  <span class="input-clear-button"></span>
+								</div>
+							  </div>
+							</li>
+							<li class="item-content item-input">
+							
+							  <div class="item-inner">
+								<button class="col button button-outline button-raised button-fill color-red">Beli</button>
+								
+							  </div>
+							</li>
+							</ul>
+						</div>
+					  </div>
+					  <div id="tab-2" class="page-content tab tab-content">
+						<div class="block block-items">
+						  <ul class="service-list">
+							<li class="item-content item-input">
+							
+							  <div class="item-inner">
+								<div class="item-title item-label">Pilih Layanan</div>
+								<div class="item-input-wrap">
+								  <select placeholder="Please choose...">
+									<option value="BPJS">BPJS</option>
+									<option value="PDAM">PDAM</option>
+									<option value="TV">TV Berbayar</option>
+									<option value="Zakat">Zakat</option>
+									<option value="Pajak">Pajak</option>
+									<option value="Gas">Gas</option>
+									<option value="Telkom">Telkom</option>
+									<option value="Internet">Internet</option>
+								  </select>
+								</div>
+							  </div>
+							</li>
+							<li class="item-content item-input">
+							
+							  <div class="item-inner">
+								<div class="item-title item-label">No Pelanggan</div>
+								<div class="item-input-wrap">
+								  <input type="tel" placeholder="Nomor Pelanggan">
+								  <span class="input-clear-button"></span>
+								</div>
+							  </div>
+							</li>
+							
+							<li class="item-content item-input">
+							
+							  <div class="item-inner">
+								<button class="col button button-outline button-raised">Bayar</button>
+								
+							  </div>
+							</li>
+							</ul>
+						</div>
+					  </div>
+					  <div id="tab-3" class="page-content tab tab-content">
+						<div class="block">
+						  <p>Coming Soon</p>
+						
+						</div>
+					  </div>
+					</div>
+				  </div>
+			
+			  </li>
+			
+		 
+		   
+		 
+        </div>
+          
+            <!--<p><a href="#" class="tutorial-open-btn button">Open Welcome Screen</a></p>-->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+   
+<script src="https://www.gstatic.com/firebasejs/4.10.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyBVLzOMxbKbx03B5nc_SU8o_SCs5Orkl4E",
+    authDomain: "test-celengan.firebaseapp.com",
+    databaseURL: "https://test-celengan.firebaseio.com",
+    projectId: "test-celengan",
+    storageBucket: "test-celengan.appspot.com",
+    messagingSenderId: "1036584291069"
+  };
+  firebase.initializeApp(config);
+</script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/framework7/2.0.7/js/framework7.min.js"></script>
+    <script type="text/javascript" src="js/framework7.welcomescreen.js"></script>
+    <script type="text/javascript" src="js/init.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+  </body>
+</html>
